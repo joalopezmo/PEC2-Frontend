@@ -5,10 +5,8 @@ function sum(array) {
 }
 
 function productAll(array) {
-  const result = array.reduce(//(product, n) => product * n, 1
-  function(ind) {
-    return ind.every(function(n) {
-      return n >= 0);
+  const result = array.reduce((product, n) => product * n, 1
+  );
   return result;
 }
 

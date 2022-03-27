@@ -2,14 +2,17 @@
 // are even numbers.
 
 function allEven(input) {
-  return input;
+  function areEven(i){
+    return i % 2 === 0;
+  };
+  return input.every(areEven);
 }
 
 // Check to see if all elements in an array
 // are of the same type.
 
 function allSameType(input) {
-  return input;
+  return input.every((val, i, arr) => typeof val === typeof arr[0]);
 }
 
 // Check to see if every element in the matrix is
@@ -17,7 +20,13 @@ function allSameType(input) {
 // greater than 0.
 
 function positiveMatrix(input) {
-  return input;
+
+  function isPositive(i){
+    return i > 0;
+  }
+
+  return input.every( e => (e.every(isPositive)));
+
 }
 
 // Check that all items in an array are strings
