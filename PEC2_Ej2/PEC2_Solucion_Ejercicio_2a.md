@@ -1,0 +1,3 @@
+a. ¿Por qué es el valor de "this" es undefined?
+
+El valor del "this" es undefined porque con el cambio realizado en la linea de codigo se llama un metodo ".addTodo" que no se encuentra definido dentro de la clase.  Al crear esta linea se crea un nuevo contexto de ejecucion y el codigo de this se vuelve inaccesible, ya que por definicion, en esta linea "this" ya no es un objeto y por tanto no puede llamar al metodo que se busca. Es por esta razon que se utilizan las arrow function, ya que en su uso, precisamente evitan generar un nuevo contexto a la palabra reservada "this".

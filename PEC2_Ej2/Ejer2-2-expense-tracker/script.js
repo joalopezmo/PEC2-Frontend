@@ -1,4 +1,4 @@
-const balance = document.getElementById('balance');
+/*const balance = document.getElementById('balance');
 const money_plus = document.getElementById('money-plus');
 const money_minus = document.getElementById('money-minus');
 const list = document.getElementById('list');
@@ -17,10 +17,10 @@ const localStorageTransactions = JSON.parse(
   localStorage.getItem('transactions')
 );
 
-let transactions =
+let transactions = //ya usado
   localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 
-// Add transaction
+// Add transaction //ya usado
 function addTransaction(e) {
   e.preventDefault();
 
@@ -46,12 +46,12 @@ function addTransaction(e) {
   }
 }
 
-// Generate random ID
+// Generate random ID //ya usado
 function generateID() {
   return Math.floor(Math.random() * 100000000);
 }
 
-// Add transactions to DOM list
+// Add transactions to DOM list // ya usado
 function addTransactionDOM(transaction) {
   // Get sign
   const sign = transaction.amount < 0 ? '-' : '+';
@@ -72,7 +72,7 @@ function addTransactionDOM(transaction) {
   list.appendChild(item);
 }
 
-// Update the balance, income and expense
+// Update the balance, income and expense //ya usado
 function updateValues() {
   const amounts = transactions.map(transaction => transaction.amount);
 
@@ -93,7 +93,7 @@ function updateValues() {
   money_minus.innerText = `$${expense}`;
 }
 
-// Remove transaction by ID
+// Remove transaction by ID //ya usado
 function removeTransaction(id) {
   transactions = transactions.filter(transaction => transaction.id !== id);
 
@@ -102,12 +102,12 @@ function removeTransaction(id) {
   init();
 }
 
-// Update local storage transactions
+// Update local storage transactions //ya usado commit
 function updateLocalStorage() {
   localStorage.setItem('transactions', JSON.stringify(transactions));
 }
 
-// Init app
+// Init app // ya usado
 function init() {
   list.innerHTML = '';
 
@@ -117,4 +117,4 @@ function init() {
 
 init();
 
-form.addEventListener('submit', addTransaction);
+form.addEventListener('submit', addTransaction);*/
